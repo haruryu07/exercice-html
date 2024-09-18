@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewwport" content="width=deviece-width, initial-scale=1.0">
+    <title>Formulaire </title>
+</head>
+<body>
+
+    <h1>formulaire</h1>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formulaire de teste</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="genre" id="1" checked>
+                    <label for="1">Monsieur</label>
+                </li> 
+                <li>
+                    <input type="radio" name="genre" id="3" checked>
+                    <label for="2">Madame</label>
+                </li>
+                <li>
+                    <input type="radio" name="genre" id="3" checked>
+                    <label for="3">Autre</label>
+                </li>
+                <!--code ligne 15 a 27 = liste de choix entre monsieur madame et autre-->
+                <br>
+                <br>
+                <li>
+                    <input type="text" placeholder="toto" id="texte" required name="nom de famille et prénom" checked>
+                    <label for="text">Nom de famille et prénom<span>*</span></label>
+                </li>
+                <li>
+                    <input type="tel" placeholder="votre numéro de téléphone" id="tel" checked>
+                    <label for="tel">numéro de téléphone<span>*</span></label>
+                </li>
+                <li>
+                    <input type="email" placeholder="votre email" id="email" checked>
+                    <label for="email">votre email<span>*</label>
+                    </li>
+                    <!--ligne 31 a 42 = zone de texte avec possibiliter de marque un truc. 1 = nom prénom. 2 = téléphone. 3 = email-->
+                    <br>
+                    <br>
+                    <li>
+                        <select name="département" id="département-select">
+                            <option value="">--selectionner une option--</option>
+                            <option value="33">33</option>
+                            <option value="93">93</option>
+                            <option value="77">77</option>
+                            <option value="91">91</option>
+                            <option value="autre">autre</option>
+                    </li>
+                    <br>
+                    <!--ligne 46 a 52 = liste d'option a sélectionner-->
+                    <li>
+                        <input type="text" placeholder="île de france" id="texte" name="département" checked>
+                        <label for="text">département<span>*</span></label>
+                    </li>
+                </select>
+            </ul>
+            <!--ligne 56 a 57 = rajoue d'une option texte pour le département si il n'y est pas.-->
+            <br>
+            <br>
+            <textarea name="zone de text" rows="6" cols="56" placeholder="votre message ici"></textarea>
+            <!--ligne 63 = zone de texte. rows et cols = hauteur et largeur.-->
+            <br>
+            <br>
+            <button type="reset">effacer le formulaire</button>
+            <button type="submit">sauvegarder le formulaire</button>
+            <!--ligne 67 a 68 = bouton pour effacer ou sauvgarder le formulaire.-->
+        </fieldset>
+    </form>
+</body>
+</html>
